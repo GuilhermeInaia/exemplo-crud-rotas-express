@@ -1,15 +1,10 @@
-let produtos = [
-    {
-        "id": 1,
-        "nome": "produto 1"
-    },
-    {
-        "id": 2,
-        "nome": "produto 2"
-    }
-]
+
+let fs = require('fs');
+
+let produtos = fs.readFileSync('controllers/produto/produtos.json').toString()
 
 function listar(){
+    console.log(produtos)
     return produtos;
 }
 function criar(produto){
