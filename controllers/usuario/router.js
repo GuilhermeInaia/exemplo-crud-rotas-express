@@ -9,15 +9,16 @@ router.get('/usuarios', (req, res) => {
 
 router.get('/usuarios/:id', (req, res) => {
     res.send(
-        usuarioController.buscar()
+        usuarioController.buscar(req.params.id)
     )
 });
 
 router.post('/login', (req, res) => {
+    let {email, senha} = req.body
     res.send(
-        usuarioController.auth()
+        usuarioController.auth(email, senha)
     )
-})
+});
 
 
 
