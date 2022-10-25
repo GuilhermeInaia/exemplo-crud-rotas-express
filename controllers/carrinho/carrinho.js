@@ -15,6 +15,11 @@ function buscarCarrinhoDoUsuario(token){
     return JSON.stringify(resultado);
 }
 
+function atualizarCarrinhoDoUsuario(){
+    return "Atualizando"
+}
+
 module.exports = {
     buscarCarrinhoDoUsuario,
+    atualizarCarrinhoDoUsuario,
 }
