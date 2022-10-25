@@ -16,6 +16,8 @@ app.use('/', produtoRota);
 app.use('/', usuarioRouter); //ei servidor, fica de olho nessas rotas
 app.use('/', carrinhoRouter);
 
+app.use('/', promocoesRota)
+
 app.use((req, res) => {
   res.status(404).send("{message: rota não encontrada}")
 })
