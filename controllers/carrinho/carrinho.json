@@ -1,5 +1,26 @@
 [
     {
-        
+        "id": 1,
+        "produto":"Acerola",
+        "usuario": 1,
+        "quantidade": 5
+    },
+    {
+        "id": 2,
+        "produto":"Goiaba",
+        "usuario": 1,
+        "quantidade": 5
+    },
+    {
+        "id": 3,
+        "produto":"Maracuja",
+        "usuario": 3,
+        "quantidade": 5
+    },
+    {
+        "id": 4,
+        "produto":"Manga",
+        "usuario": 4,
+        "quantidade": 5
     }
 ]
